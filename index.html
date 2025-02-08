@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h2 data-testid="score" id="score">Score: 0</h2>
+    <div class="color-box" data-testid="colorBox"></div>
+    <p data-testid="gameStatus" id="game-status">Game status</p>
+    <h1 data-testid="gameInstructions">
+      Guess the correct colour of the above box.
+    </h1>
+    <div class="color-options">
+      <input type="button" value="red" data-testid="colorOption" id="red-button" class="color-option">
+      <input type="button" value="blue" data-testid="colorOption" id="blue-button" class="color-option">
+      <input type="button" value="yellow" data-testid="colorOption" id="yellow-button" class="color-option">
+      <input type="button" value="green" data-testid="colorOption" id="green-button" class="color-option">
+      <input type="button" value="purple" data-testid="colorOption" id="purple-button" class="color-option">
+      <input type="button" value="pink" data-testid="colorOption" id="pink-button" class="color-option">
+    </div>
+
+    <input type="button" value="reset" data-testid="newGameButton" id="reset-score">
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
