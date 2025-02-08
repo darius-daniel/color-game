@@ -15,6 +15,9 @@ function selectRandomColor() {
 
 
 Array.prototype.forEach.call(colorBtns, (btn) => {
+    btn.style.backgroundColor = btn.value;
+    btn.style.color = "white";
+    btn.style.fontWeight = "bold";
     btn.addEventListener('click', (e) => {
         const gameStatus = document.getElementById('game-status');
         if (randomColor === btn.value) {
